@@ -1,0 +1,38 @@
+.teamGrid {
+  max-width: 900px;
+  margin: 2rem auto 0;
+}
+
+.teamCard {
+  text-align: center;
+  padding: 2.5rem 2rem;
+}
+
+.teamImage {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  border: 4px solid #066aab;
+}
+
+.teamName {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: #000;
+}
+
+.teamCredentials {
+  color: #066aab;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.teamBio {
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
