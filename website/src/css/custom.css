@@ -10,7 +10,6 @@
 
   --ifm-background-color: #ffffff;
   --ifm-font-color-base: #000000;
-  --versity-button-dark: #32373c;
 
   --ifm-font-family-base: -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --ifm-heading-font-family: var(--ifm-font-family-base);
@@ -29,17 +28,23 @@ body {
 /* Navbar Styles */
 .navbar {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 1rem;
 }
 
 .navbar__title {
   font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.navbar__link {
+  font-weight: 500;
 }
 
 .navbar-cta-button {
   background-color: var(--ifm-color-primary);
   color: white !important;
   border-radius: 3px;
-  padding: 8px 16px !important;
+  padding: 8px 20px !important;
   font-weight: 500;
   transition: background-color 0.2s ease;
 }
@@ -50,208 +55,26 @@ body {
   text-decoration: none;
 }
 
-/* Section Styles */
-.section {
-  padding: 80px 0;
-}
-
-.section--alt {
-  background-color: #f8f9fa;
-}
-
-.section__title {
-  font-size: 2.5rem;
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.section__subtitle {
-  font-size: 1.25rem;
-  text-align: center;
-  color: #666;
-  margin-bottom: 3rem;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Card Styles */
-.card {
-  background: white;
-  border-radius: 8px;
-  padding: 2rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  height: 100%;
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
-}
-
-.card:hover {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
-  transform: translateY(-2px);
-}
-
-.card__title {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 0.75rem;
-  color: var(--ifm-color-primary);
-}
-
-.card__description {
-  color: #555;
-  line-height: 1.6;
-}
-
-/* Button Styles */
-.button--primary {
-  background-color: var(--ifm-color-primary);
-  color: white;
-  border: none;
-  border-radius: 3px;
-  padding: 12px 24px;
-  font-size: 1rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.button--primary:hover {
-  background-color: var(--ifm-color-primary-dark);
-  color: white;
-  text-decoration: none;
-}
-
-.button--secondary {
-  background-color: var(--versity-button-dark);
-  color: white;
-  border: none;
-  border-radius: 3px;
-  padding: 12px 24px;
-  font-size: 1rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.button--secondary:hover {
-  background-color: #454a50;
-  color: white;
-  text-decoration: none;
-}
-
-/* Grid Layout */
-.grid {
-  display: grid;
-  gap: 2rem;
-}
-
-.grid--2 {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.grid--3 {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.grid--4 {
-  grid-template-columns: repeat(4, 1fr);
-}
-
-@media (max-width: 996px) {
-  .grid--3,
-  .grid--4 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 576px) {
-  .grid--2,
-  .grid--3,
-  .grid--4 {
-    grid-template-columns: 1fr;
-  }
-
-  .section {
-    padding: 60px 0;
-  }
-
-  .section__title {
-    font-size: 2rem;
-  }
-}
-
-/* Container */
+/* Container utility */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
 
-/* Team Card */
-.team-card {
+/* Footer Styles */
+.footer {
+  background-color: #ffffff;
+  border-top: 1px solid #eeeeee;
+  padding: 2rem 0;
+}
+
+.footer__copyright {
   text-align: center;
-}
-
-.team-card__image {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 1.5rem;
-  border: 4px solid var(--ifm-color-primary);
-}
-
-.team-card__name {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 0.25rem;
-}
-
-.team-card__credentials {
-  color: var(--ifm-color-primary);
+  color: #666666;
   font-size: 0.9rem;
-  margin-bottom: 1rem;
 }
 
-.team-card__bio {
-  color: #555;
-  line-height: 1.6;
-}
-
-/* Contact Section */
-.contact-info {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 3rem;
-  margin-top: 2rem;
-}
-
-.contact-info__item {
-  text-align: center;
-}
-
-.contact-info__label {
-  font-weight: 600;
-  color: var(--ifm-color-primary);
-  margin-bottom: 0.5rem;
-}
-
-.contact-info__value a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.contact-info__value a:hover {
-  color: var(--ifm-color-primary);
-}
-
-/* Hide default footer links */
 .footer__links {
   display: none;
 }
@@ -259,4 +82,10 @@ body {
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
+}
+
+/* Remove default Docusaurus hero styles that might conflict */
+.heroBanner {
+  padding: 0;
+  background: none;
 }
