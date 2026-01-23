@@ -1,0 +1,43 @@
+.contactGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.contactItem {
+  text-align: center;
+  min-width: 180px;
+}
+
+.contactLabel {
+  font-weight: 600;
+  color: #066aab;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.contactValue {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.contactValue a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contactValue a:hover {
+  color: #066aab;
+}
+
+@media (max-width: 576px) {
+  .contactGrid {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
