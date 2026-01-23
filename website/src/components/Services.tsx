@@ -3,36 +3,38 @@ import styles from './Services.module.css';
 
 const services = [
   {
+    icon: '🔍',
     title: 'Research & Insights',
-    description: 'Feasibility studies, investment analysis, and business cases that provide the evidence base for sound decision-making.',
+    description: 'We undertake research, policy and business analysis, including feasibility studies, investment scrutiny, and resource recovery business case development',
   },
   {
+    icon: '📋',
     title: 'Strategy & Development',
-    description: 'Policy creation and organisational strategies with ESG focus, helping you chart a clear path forward.',
+    description: 'We facilitate and co-create business and organisational strategies, with emphasis on ESG factors; & develop effective policies, programmes, and partnerships',
   },
   {
+    icon: '🚀',
     title: 'Implementation & Delivery',
-    description: 'Government relations, funding assistance, and project management to turn plans into reality.',
+    description: 'We provide government relations advice and advocacy; assistance with funding applications; & project and programme management',
   },
   {
+    icon: '📊',
     title: 'Evaluation & Review',
-    description: 'Outcomes frameworks, impact assessment, and storytelling that demonstrates your achievements.',
+    description: 'We develop outcomes and performance frameworks & conduct assessment aimed at driving improvement, generating insights, and maximising impact through compelling storytelling',
   },
 ];
 
 export default function Services(): React.JSX.Element {
   return (
-    <section id="services" className="section">
+    <section id="services" className={styles.services}>
       <div className="container">
-        <h2 className="section__title">What We Do</h2>
-        <p className="section__subtitle">
-          We offer end-to-end support across the full lifecycle of sustainability initiatives.
-        </p>
-        <div className={`grid grid--4 ${styles.servicesGrid}`}>
+        <h2 className={styles.sectionTitle}>Our services & offers</h2>
+        <div className={styles.servicesGrid}>
           {services.map((service, index) => (
-            <div key={index} className="card">
-              <h3 className="card__title">{service.title}</h3>
-              <p className="card__description">{service.description}</p>
+            <div key={index} className={styles.serviceCard}>
+              <div className={styles.serviceIcon}>{service.icon}</div>
+              <h3 className={styles.serviceTitle}>{service.title}</h3>
+              <p className={styles.serviceDescription}>{service.description}</p>
             </div>
           ))}
         </div>
