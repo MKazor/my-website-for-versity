@@ -3,35 +3,32 @@ import styles from './HowWeWork.module.css';
 
 const principles = [
   {
-    title: 'Client Partnership',
-    description: 'We work alongside you, not just for you. Your knowledge combined with our expertise creates better outcomes.',
+    title: 'Clients at the heart',
+    description: 'We work in partnership with our clients. The better we understand you, your organisation and your issues, the more we can help.',
   },
   {
-    title: 'Simplicity',
-    description: 'Complex problems don\'t always need complex solutions. We focus on clarity and practical approaches.',
+    title: 'Keep it simple',
+    description: 'Practical, tailored and fit for purpose solutions, with no academic or consulting jargon.',
   },
   {
-    title: 'Capability Building',
-    description: 'We aim to leave you stronger. Knowledge transfer and skill development are built into everything we do.',
+    title: 'Capability raising is key',
+    description: 'We equip you with the knowledge, attitudes and skills your team needs to sustain positive change.',
   },
   {
-    title: 'Actionable Insights',
-    description: 'Research and analysis that leads to clear next steps, not reports that gather dust on shelves.',
+    title: 'Actionable insights',
+    description: 'We provide you with a set of actionable insights and an execution roadmap to prioritise the next steps.',
   },
   {
-    title: 'Inclusive Collaboration',
-    description: 'The best solutions come from diverse perspectives. We bring people together to solve shared challenges.',
+    title: 'We are inclusive',
+    description: 'We value people\'s differences and encourage diversity of thought and action.',
   },
 ];
 
 export default function HowWeWork(): React.JSX.Element {
   return (
-    <section id="how-we-work" className="section">
+    <section id="how-we-work" className={styles.howWeWork}>
       <div className="container">
-        <h2 className="section__title">How We Work</h2>
-        <p className="section__subtitle">
-          Our approach is built on principles that ensure meaningful, lasting impact.
-        </p>
+        <h2 className={styles.sectionTitle}>How We Work</h2>
         <div className={styles.principlesContainer}>
           {principles.map((principle, index) => (
             <div key={index} className={styles.principle}>

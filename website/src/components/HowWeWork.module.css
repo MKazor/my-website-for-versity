@@ -1,6 +1,19 @@
+.howWeWork {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #000000;
+}
+
 .principlesContainer {
   max-width: 800px;
-  margin: 2rem auto 0;
+  margin: 0 auto;
 }
 
 .principle {
@@ -8,7 +21,7 @@
   align-items: flex-start;
   gap: 1.5rem;
   padding: 1.5rem 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .principle:last-child {
@@ -17,31 +30,33 @@
 
 .principleNumber {
   flex-shrink: 0;
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   background-color: #066aab;
-  color: white;
+  color: #ffffff;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
 }
 
 .principleContent {
   flex: 1;
+  padding-top: 0.25rem;
 }
 
 .principleTitle {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
-  color: #000;
+  color: #000000;
 }
 
 .principleDescription {
-  color: #555;
+  font-size: 1rem;
+  color: #555555;
   line-height: 1.6;
   margin: 0;
 }
@@ -52,5 +67,9 @@
     align-items: center;
     text-align: center;
     gap: 1rem;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
   }
 }
