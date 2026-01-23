@@ -1,0 +1,56 @@
+.principlesContainer {
+  max-width: 800px;
+  margin: 2rem auto 0;
+}
+
+.principle {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.principle:last-child {
+  border-bottom: none;
+}
+
+.principleNumber {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  background-color: #066aab;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.principleContent {
+  flex: 1;
+}
+
+.principleTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #000;
+}
+
+.principleDescription {
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 576px) {
+  .principle {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+}
