@@ -29,17 +29,15 @@
   flex-shrink: 0;
   width: 48px;
   height: 48px;
-  background-color: #066aab;
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
 }
 
-.contactIcon svg {
-  width: 24px;
-  height: 24px;
+.contactIcon img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
 }
 
 .contactText {

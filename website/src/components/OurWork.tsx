@@ -5,26 +5,26 @@ const projects = [
   {
     title: 'Business case development',
     description: 'We supported the review and development of a Better Business Case for processing of organic materials for beneficial use.',
-    clients: 'Te Tahua O Rangitāne Limited; private industry clients',
-    bgColor: '#2d5a6e',
+    clients: 'Te Tahua O Rangitane Limited; private industry clients',
+    image: '/img/work/work1.jpg',
   },
   {
     title: 'Waste minimisation strategies & plans',
     description: 'We have worked with a range of clients on Waste Management & Minimisation Plans (WMMPs), including feasibility studies, and development of bespoke strategies for optimising resource recovery and waste service options.',
     clients: 'Gisborne District Council, Auckland Council, Tauranga District Council',
-    bgColor: '#4a7c59',
+    image: '/img/work/work2.jpg',
   },
   {
     title: 'Outcomes & evaluation projects',
     description: 'We have led outcomes framework development and both process and impact evaluation for clients. Our mixed-methods approach includes Social Return on Investment, cost-benefit analysis and value for money reviews.',
     clients: 'Tauranga City Council, Auckland Council, Zero Waste Network',
-    bgColor: '#8b6914',
+    image: '/img/work/work3.jpg',
   },
   {
     title: 'Funding & advocacy',
     description: 'We are working with several clients on business cases, and developing applications for funding. An important part of this work is supporting clients with demonstrating their solution, providing evidence of impact, and stress testing their commercial and financial case.',
     clients: '',
-    bgColor: '#5a4a7c',
+    image: '/img/work/work4.jpg',
   },
 ];
 
@@ -38,7 +38,7 @@ export default function OurWork(): React.JSX.Element {
             <div
               key={index}
               className={styles.workCard}
-              style={{ backgroundColor: project.bgColor }}
+              style={{ backgroundImage: `url(${project.image})` }}
             >
               <div className={styles.workOverlay}>
                 <h3 className={styles.workTitle}>{project.title}</h3>
