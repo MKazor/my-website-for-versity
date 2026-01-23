@@ -1,0 +1,16 @@
+.projectsGrid {
+  margin-top: 2rem;
+}
+
+.category {
+  display: inline-block;
+  background-color: #066aab;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
