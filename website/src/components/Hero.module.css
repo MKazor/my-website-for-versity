@@ -1,46 +1,49 @@
 .hero {
-  background-color: #ffffff;
+  background-image: url('/img/banner-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   min-height: 500px;
   display: flex;
   align-items: center;
   position: relative;
-  padding: 80px 0;
 }
 
 .heroContent {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1.5rem;
-  text-align: center;
+  padding: 80px 1.5rem;
+  width: 100%;
 }
 
 .heroTitle {
   font-size: 4rem;
-  font-weight: 300;
+  font-weight: 700;
   line-height: 1.1;
   margin: 0;
-  color: #000000;
+  color: #ffffff;
+  text-align: left;
   font-family: -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, sans-serif;
 }
 
 .heroSubtitle {
   font-size: 4rem;
-  font-weight: 300;
+  font-weight: 700;
   line-height: 1.1;
   margin: 0 0 2rem 0;
   color: #f7941d;
+  text-align: left;
   font-family: -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, sans-serif;
 }
 
 .heroDescription {
   font-size: 1.25rem;
-  color: #333333;
+  color: #ffffff;
   line-height: 1.7;
   margin-bottom: 2.5rem;
   font-weight: 400;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 600px;
+  text-align: left;
 }
 
 .heroButton {
@@ -63,8 +66,11 @@
 
 @media (max-width: 768px) {
   .hero {
-    padding: 60px 0;
     min-height: auto;
+  }
+
+  .heroContent {
+    padding: 60px 1.5rem;
   }
 
   .heroTitle,
