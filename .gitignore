@@ -1,0 +1,44 @@
+# OS and editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.idea/
+.vscode/
+*.sublime-*
+
+# Local env / secrets
+.env
+.env.*
+!.env.example
+
+# Logs and temp
+*.log
+*.tmp
+.cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependencies
+node_modules/
+
+# Docusaurus
+.docusaurus/
+.cache-loader/
+build/
+
+# Yarn 4 (PnP without zero-installs)
+**/.pnp.*
+**/.yarn/*
+!**/.yarn/patches
+!**/.yarn/plugins
+!**/.yarn/releases
+!**/.yarn/sdks
+!**/.yarn/versions
+
+# npm lockfile (using yarn)
+package-lock.json
