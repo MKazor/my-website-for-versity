@@ -9,7 +9,8 @@ export default function WhatWeBelieve(): React.JSX.Element {
           <img src="/img/believe.png" alt="What we believe" className={styles.image} />
         </div>
         <div className={styles.content}>
-          <h2 className={styles.title}>What we believe</h2>
+          <h2 className={styles.title}>WHAT WE BELIEVE</h2>
+          <div className={styles.titleUnderline}></div>
           <p className={styles.text}>
             Investment decisions are being made every day, on well-intended plans, products,
             policies and programmes aimed at making the world a better place.

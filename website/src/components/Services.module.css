@@ -1,14 +1,24 @@
 .services {
   padding: 80px 0;
-  background-color: #ffffff;
+  background-color: #213D45;
 }
 
 .sectionTitle {
-  font-size: 2.5rem;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 500;
   text-align: center;
-  margin-bottom: 3rem;
-  color: #000000;
+  margin-bottom: 0.75rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "SF UI Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.titleUnderline {
+  width: 60px;
+  height: 3px;
+  background-color: #FF5627;
+  margin: 0 auto 3rem auto;
 }
 
 .servicesGrid {
@@ -18,49 +28,80 @@
 }
 
 .serviceCard {
-  border-radius: 8px;
+  background-color: #ffffff;
+  border-radius: 50px 0 50px 0;
   overflow: hidden;
-  position: relative;
-  aspect-ratio: 3/4;
-  background-size: cover;
-  background-position: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.serviceOverlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.6);
-  padding: 2rem 1.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.serviceCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.imageWrapper {
+  width: 100%;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+}
+
+.serviceImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.serviceCard:hover .serviceImage {
+  transform: scale(1.05);
+}
+
+.serviceContent {
+  padding: 1.5rem;
   text-align: center;
-  transition: background 0.3s ease;
+  position: relative;
 }
 
-.serviceCard:hover .serviceOverlay {
-  background: rgba(0, 0, 0, 0.75);
+.iconWrapper {
+  width: 60px;
+  height: 60px;
+  margin: -45px auto 1rem auto;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
 }
 
 .serviceIcon {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 1.5rem;
+  width: 35px;
+  height: 35px;
   object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.serviceCard:hover .serviceIcon {
+  transform: scale(1.1);
 }
 
 .serviceTitle {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  color: #000000;
+  font-family: "SF UI Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 .serviceDescription {
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: #555555;
   line-height: 1.6;
   margin: 0;
+  font-family: "SF UI Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 400;
 }
 
 @media (max-width: 1100px) {
@@ -75,6 +116,10 @@
   }
 
   .sectionTitle {
-    font-size: 2rem;
+    font-size: 1.25rem;
+  }
+
+  .serviceCard {
+    border-radius: 30px 0 30px 0;
   }
 }

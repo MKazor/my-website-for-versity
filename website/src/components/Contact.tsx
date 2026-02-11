@@ -33,7 +33,8 @@ export default function Contact(): React.JSX.Element {
   return (
     <section id="contact" className={styles.contact}>
       <div className="container">
-        <h2 className={styles.sectionTitle}>We love to chat</h2>
+        <h2 className={styles.sectionTitle}>WE LOVE TO CHAT</h2>
+        <div className={styles.titleUnderline}></div>
         <div className={styles.contactContainer}>
           {contactItems.map((item, index) => (
             <div key={index} className={styles.contactItem}>

@@ -4,11 +4,21 @@
 }
 
 .sectionTitle {
-  font-size: 2.5rem;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 500;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 0.75rem;
   color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "SF UI Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.titleUnderline {
+  width: 60px;
+  height: 3px;
+  background-color: #FF5627;
+  margin: 0 auto 3rem auto;
 }
 
 .principlesContainer {
@@ -22,6 +32,11 @@
   gap: 1.5rem;
   padding: 1.5rem 0;
   border-bottom: 1px solid #eeeeee;
+  transition: transform 0.3s ease;
+}
+
+.principle:hover {
+  transform: translateX(10px);
 }
 
 .principle:last-child {
@@ -41,6 +56,11 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.principle:hover .principleIcon img {
+  transform: scale(1.1);
 }
 
 .principleContent {
@@ -50,9 +70,10 @@
 
 .principleTitle {
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 0.5rem;
   color: #000000;
+  font-family: "SF UI Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 .principleDescription {
@@ -60,6 +81,8 @@
   color: #555555;
   line-height: 1.6;
   margin: 0;
+  font-family: "SF UI Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 400;
 }
 
 @media (max-width: 576px) {
@@ -71,6 +94,6 @@
   }
 
   .sectionTitle {
-    font-size: 2rem;
+    font-size: 1.25rem;
   }
 }

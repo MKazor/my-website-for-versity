@@ -33,7 +33,8 @@ export default function HowWeWork(): React.JSX.Element {
   return (
     <section id="how-we-work" className={styles.howWeWork}>
       <div className="container">
-        <h2 className={styles.sectionTitle}>How We Work</h2>
+        <h2 className={styles.sectionTitle}>HOW WE WORK</h2>
+        <div className={styles.titleUnderline}></div>
         <div className={styles.principlesContainer}>
           {principles.map((principle, index) => (
             <div key={index} className={styles.principle}>

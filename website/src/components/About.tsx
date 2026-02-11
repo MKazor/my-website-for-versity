@@ -22,7 +22,8 @@ export default function About(): React.JSX.Element {
   return (
     <section id="about" className={styles.about}>
       <div className="container">
-        <h2 className={styles.sectionTitle}>Who we are</h2>
+        <h2 className={styles.sectionTitle}>WHO WE ARE</h2>
+        <div className={styles.titleUnderline}></div>
         <p className={styles.introText}>
           The practice is led by Michelle Kazor and Joanne McGregor. Together we bring senior
           leadership, industry and consulting experience across corporate, local and central

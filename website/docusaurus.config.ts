@@ -52,12 +52,13 @@ const config: Config = {
       {name: 'description', content: 'Versity helps organizations make better decisions for climate, waste, and resource efficiency.'},
     ],
     navbar: {
-      title: 'Versity',
+      title: '',
       logo: {
         alt: 'Versity Logo',
         src: 'img/logo.png',
       },
       items: [
+        {to: '/', label: 'Home', position: 'left'},
         {to: '/#services', label: 'Services', position: 'left'},
         {to: '/#our-work', label: 'Our Work', position: 'left'},
         {to: '/#how-we-work', label: 'How We Work', position: 'left'},
