@@ -10,7 +10,7 @@ const principles = [
   {
     icon: '/img/work_icon2.png',
     title: 'Keep it simple',
-    description: 'Practical, tailored and fit for purpose solutions, with no academic or consulting jargon.',
+    description: 'Practical, tailored and fit for purpose solutions, with no academic or consulting jargon. Simple also means phased approaches that reduce your cost and risk.',
   },
   {
     icon: '/img/work_icon3.png',
@@ -25,7 +25,7 @@ const principles = [
   {
     icon: '/img/work_icon5.png',
     title: 'We are inclusive',
-    description: 'We value people\'s differences and encourage diversity of thought and action.',
+    description: 'We value people\'s differences and encourage diversity of thought and action. We respectfully listen, learn and collaborate to empower those who partner with us.',
   },
 ];
 
