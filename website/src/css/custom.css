@@ -41,17 +41,17 @@
 
 /* Versity Brand Colors */
 :root {
-  --ifm-color-primary: #2DB3C4;
-  --ifm-color-primary-dark: #208C95;
-  --ifm-color-primary-darker: #1F8992;
-  --ifm-color-primary-darkest: #1a7a82;
-  --ifm-color-primary-light: #38C6D7;
-  --ifm-color-primary-lighter: #4DD0E0;
-  --ifm-color-primary-lightest: #6DDAE8;
+  --ifm-color-primary: #0cbbd1;
+  --ifm-color-primary-dark: #01838e;
+  --ifm-color-primary-darker: #01838e;
+  --ifm-color-primary-darkest: #01838e;
+  --ifm-color-primary-light: #0cbbd1;
+  --ifm-color-primary-lighter: #0cbbd1;
+  --ifm-color-primary-lightest: #0cbbd1;
 
-  --versity-orange: #FF5627;
-  --versity-teal: #2DB3C4;
-  --versity-teal-dark: #208C95;
+  --versity-orange: #f0592b;
+  --versity-aqua: #0cbbd1;
+  --versity-teal: #01838e;
 
   --ifm-background-color: #ffffff;
   --ifm-font-color-base: #000000;
@@ -118,11 +118,11 @@ body {
 }
 
 .navbar__link:hover {
-  color: #2DB3C4;
+  color: #0cbbd1;
 }
 
 .navbar-cta-button {
-  background: linear-gradient(90deg, #2DB3C4 0%, #208C95 100%);
+  background: linear-gradient(90deg, #0cbbd1 0%, #01838e 100%);
   color: white !important;
   border-radius: 100px;
   padding: 10px 24px !important;
@@ -137,7 +137,7 @@ body {
 }
 
 .navbar-cta-button:hover {
-  background: linear-gradient(90deg, #208C95 0%, #1F8992 100%);
+  background: linear-gradient(90deg, #01838e 0%, #01838e 100%);
   color: white !important;
   text-decoration: none;
   transform: translateY(-2px);

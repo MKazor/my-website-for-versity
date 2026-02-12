@@ -33,9 +33,9 @@ export default function OurWork(): React.JSX.Element {
     <section id="our-work" className={styles.ourWork}>
       <div className="container">
         <div className={styles.sectionHeader}>
-          <h2 className={styles.sectionTitle}>OUR WORK</h2>
-          <div className={styles.titleUnderline}></div>
+          <h2 className={styles.sectionTitle}>Our work</h2>
           <p className={styles.sectionSubtitle}>Examples of our projects & client work</p>
+          <div className={styles.titleUnderline}></div>
         </div>
         <div className={styles.workGrid}>
           {projects.map((project, index) => (
