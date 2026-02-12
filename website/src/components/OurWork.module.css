@@ -65,7 +65,7 @@
   color: #ffffff;
   opacity: 0;
   transition: all 0.3s ease;
-  background: rgba(6, 106, 171, 0.85);
+  background: rgba(32, 140, 149, 0.85);
   overflow-y: auto;
 }
 
@@ -118,14 +118,17 @@
 @media (max-width: 576px) {
   .workGrid {
     grid-template-columns: 1fr;
+    gap: 1rem;
   }
 
   .workCard {
     min-height: 350px;
+    border-radius: 8px;
   }
 
   .workOverlay {
     opacity: 1;
+    background: linear-gradient(to bottom, rgba(32, 140, 149, 0.7) 0%, rgba(32, 140, 149, 0.9) 100%);
   }
 
   .sectionTitle {
