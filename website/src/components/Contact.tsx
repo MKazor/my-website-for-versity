@@ -11,8 +11,8 @@ const contactItems = [
   {
     icon: '/img/icons/mail.png',
     label: 'Email',
-    value: 'hello@versity.co.nz',
-    href: 'mailto:hello@versity.co.nz',
+    value: 'michelle.kazor@versity.co.nz',
+    href: 'mailto:michelle.kazor@versity.co.nz',
   },
   {
     icon: '/img/icons/location.png',

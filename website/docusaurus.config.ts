@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Versity',
   tagline: 'Better decisions. Better outcomes.',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.png',
 
   url: 'https://www.versity.co.nz',
   baseUrl: '/',

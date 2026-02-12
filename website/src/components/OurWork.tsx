@@ -4,8 +4,8 @@ import styles from './OurWork.module.css';
 const projects = [
   {
     title: 'Business case development',
-    description: 'We supported the review and development of a Better Business Case for processing of organic materials for beneficial use.',
-    clients: 'Te Tahua O Rangitane Limited; private industry clients',
+    description: 'We\'ve supported the development of Business Cases for organics processing facilities and for a range of resource recovery infrastructure. We have also supported clients with options assessment, due diligence and feasibility research.',
+    clients: 'Te Tahua O Rangitāne; Auckland Council; EnviroNZ Ltd; Wānaka Wastebusters; Gisborne Holdings Limited',
     image: '/img/work/work1.jpg',
   },
   {
@@ -22,8 +22,8 @@ const projects = [
   },
   {
     title: 'Funding & advocacy',
-    description: 'We are working with several clients on business cases, and developing applications for funding. An important part of this work is supporting clients with demonstrating their solution, providing evidence of impact, and stress testing their commercial and financial case.',
-    clients: '',
+    description: 'We work with clients on strategic positioning, advocacy strategies, business cases, and applications for funding. An important part of this work is supporting clients with demonstrating their solution, providing evidence of impact, and stress testing their commercial, and economic case.',
+    clients: 'Greencycle Ltd; Echo Tech Ltd; WasteMINZ TAO Forum, Zero Waste Tāmaki Makaurau Trust, and Waste & Recycling Industry Association',
     image: '/img/work/work4.jpg',
   },
 ];

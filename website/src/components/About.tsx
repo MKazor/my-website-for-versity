@@ -6,14 +6,20 @@ const team = [
     name: 'Michelle Kazor',
     title: 'MSES; BA Director & Consultant',
     image: '/img/team/michelle.jpg',
-    bio: 'Before re-establishing Versity, Michelle was the Director of Waste Investment at the Ministry for the Environment, responsible for over $200M of investment into infrastructure over a four year period. In addition to her consulting practice, Michelle is a national Waste Advisory Board member, and on the board of Cool-Safe, an accredited product stewardship organisation. She supports clients with strategy, policy, service design and investment advisory.',
+    bio: [
+      'Michelle is the founder of Versity, with over fifteen years\' consulting experience across corporate, government and not-for-profit sectors. She focuses on strategy, policy, service design and investment advisory, working at the intersection of public purpose and practical delivery.',
+      'Previously a Director at the Ministry for the Environment, she oversaw significant public investment in waste infrastructure and product stewardship initiatives. In addition to her consulting practice, she is a member of the national Waste Advisory Board and is on the Board of the Trust for Destruction of Synthetic Refrigerants, an accredited product stewardship organisation.',
+      'Michelle works with clients to design practical, investable solutions that deliver long-term environmental and economic outcomes.',
+    ],
     linkedin: 'https://www.linkedin.com/in/michellekazor/',
   },
   {
     name: 'Joanne McGregor',
     title: 'MEng; BCEng Director & Consultant',
     image: '/img/team/joanne.jpg',
-    bio: 'Joanne is a civil engineer with long-standing involvement in the waste sector. Her extensive public and private experience, includes two years as a WMF Senior Investment Manager. Joanne produces actionable research, technical due diligence and feasibility review, project development, and resource recovery business cases.',
+    bio: [
+      'Joanne is a civil engineer with long-standing involvement in the waste sector. Her extensive public and private experience, includes two years as a WMF Senior Investment Manager. Joanne produces actionable research, technical due diligence and feasibility review, project development, and resource recovery business cases.',
+    ],
     linkedin: 'https://www.linkedin.com/in/joanne-mcgregor/',
   },
 ];
@@ -45,7 +51,11 @@ export default function About(): React.JSX.Element {
               <div className={styles.teamContent}>
                 <h3 className={styles.teamName}>{member.name}</h3>
                 <p className={styles.teamTitle}>{member.title}</p>
-                <p className={styles.teamBio}>{member.bio}</p>
+                <div className={styles.teamBio}>
+                  {member.bio.map((paragraph, pIndex) => (
+                    <p key={pIndex}>{paragraph}</p>
+                  ))}
+                </div>
                 <a
                   href={member.linkedin}
                   target="_blank"

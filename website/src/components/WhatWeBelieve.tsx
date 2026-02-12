@@ -17,7 +17,8 @@ export default function WhatWeBelieve(): React.JSX.Element {
           </p>
           <p className={styles.text}>
             Many initiatives fall short. Why? Often, outcomes are vague, strategies misaligned,
-            research insufficient, or resources and capability lacking.
+            research insufficient, or resources and capability lacking. Sometimes good programs
+            haven't told their story, leaving their success unproven. Have you faced these challenges?
           </p>
           <p className={styles.textHighlight}>
             We have—and we're here to help.
