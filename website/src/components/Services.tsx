@@ -32,7 +32,8 @@ export default function Services(): React.JSX.Element {
   return (
     <section id="services" className={styles.services}>
       <div className="container">
-        <h2 className={styles.sectionTitle}>OUR SERVICES & OFFERS</h2>
+        <h2 className={styles.sectionTitle}>Our services & offers</h2>
+        <p className={styles.sectionSubtitle}>We want our clients to get the most from their policies, programmes and investments. Our service offering is framed around four interconnected pillars:</p>
         <div className={styles.titleUnderline}></div>
         <div className={styles.servicesGrid}>
           {services.map((service, index) => (

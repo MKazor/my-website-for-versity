@@ -9,7 +9,7 @@ export default function OurPurpose(): React.JSX.Element {
           <img src="/img/hero-bg.png" alt="Our purpose" className={styles.image} />
         </div>
         <div className={styles.content}>
-          <h2 className={styles.title}>OUR PURPOSE</h2>
+          <h2 className={styles.title}>Our purpose</h2>
           <div className={styles.titleUnderline}></div>
           <p className={styles.text}>
             We partner with organisations across the private, public, and non-profit sectors

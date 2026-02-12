@@ -1,23 +1,33 @@
 .services {
   padding: 80px 0;
-  background-color: #213D45;
+  background-color: #01838e;
 }
 
 .sectionTitle {
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 2.5rem;
+  font-weight: 600;
   text-align: center;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
   color: #ffffff;
   text-transform: uppercase;
-  letter-spacing: 2px;
   font-family: "SF UI Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.sectionSubtitle {
+  font-size: 1.25rem;
+  color: #ffffff;
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto 1.5rem auto;
+  line-height: 1.7;
+  font-family: "SF UI Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 400;
 }
 
 .titleUnderline {
   width: 60px;
   height: 3px;
-  background-color: #FF5627;
+  background-color: #f0592b;
   margin: 0 auto 3rem auto;
 }
 
@@ -96,9 +106,9 @@
 }
 
 .serviceDescription {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #555555;
-  line-height: 1.6;
+  line-height: 1.7;
   margin: 0;
   font-family: "SF UI Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-weight: 400;
@@ -116,7 +126,7 @@
   }
 
   .sectionTitle {
-    font-size: 1.25rem;
+    font-size: 2rem;
   }
 
   .serviceCard {

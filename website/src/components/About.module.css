@@ -4,32 +4,31 @@
 }
 
 .sectionTitle {
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 2.5rem;
+  font-weight: 600;
   text-align: center;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
   color: #000000;
   text-transform: uppercase;
-  letter-spacing: 2px;
   font-family: "SF UI Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.introText {
+  font-size: 1.25rem;
+  color: #555555;
+  line-height: 1.7;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 1.5rem auto;
+  font-family: "SF UI Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 400;
 }
 
 .titleUnderline {
   width: 60px;
   height: 3px;
-  background-color: #FF5627;
-  margin: 0 auto 1.5rem auto;
-}
-
-.introText {
-  font-size: 1.1rem;
-  color: #555555;
-  line-height: 1.8;
-  text-align: center;
-  max-width: 800px;
+  background-color: #f0592b;
   margin: 0 auto 3rem auto;
-  font-family: "SF UI Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  font-weight: 400;
 }
 
 .teamContainer {
@@ -61,7 +60,7 @@
 
 .teamMember:hover .teamImage {
   transform: scale(1.05);
-  border-color: #016b75;
+  border-color: #01838e;
 }
 
 .teamContent {
@@ -90,7 +89,7 @@
 }
 
 .teamBio p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #555555;
   line-height: 1.7;
   margin: 0 0 1rem 0;
@@ -113,7 +112,7 @@
 }
 
 .linkedinLink:hover {
-  color: #016b75;
+  color: #01838e;
   text-decoration: underline;
   transform: translateX(5px);
 }
@@ -135,6 +134,6 @@
   }
 
   .sectionTitle {
-    font-size: 1.25rem;
+    font-size: 2rem;
   }
 }
