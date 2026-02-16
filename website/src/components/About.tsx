@@ -18,7 +18,9 @@ const team = [
     title: 'MEng; BCEng Director & Consultant',
     image: '/img/team/joanne.jpg',
     bio: [
-      'Joanne is a civil engineer with long-standing involvement in the waste sector. Her extensive public and private experience, includes two years as a WMF Senior Investment Manager. Joanne produces actionable research, technical due diligence and feasibility review, project development, and resource recovery business cases.',
+      'Joanne brings an engineering and operational background in the waste sector, providing practical insights to support policy development and investment decisions. Her recent roles include serving as a WMF Senior Investment Manager and the New Zealand lead for a multi-national waste advisory team.',
+      'Familiar with a wide range of waste activities, she has particular expertise in organic waste management, via composting or anaerobic digestion. Her experience includes managing an international team\'s verification of the Ecogas Reporoa facility and a detailed condition and performance review of New Zealand\'s largest MRF.',
+      'Joanne is highly proficient in managing waste and climate data, and supports clients with actionable research, technical due diligence, feasibility reviews, project development, and resource recovery business cases.',
     ],
     linkedin: 'https://www.linkedin.com/in/joanne-mcgregor/',
   },
